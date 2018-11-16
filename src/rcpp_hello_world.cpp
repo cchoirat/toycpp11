@@ -17,6 +17,13 @@ double myhypot(double x, double y) {
 }
 
 // [[Rcpp::export]]
+int useAuto() {
+  // http://gallery.rcpp.org/articles/first-steps-with-C++11/
+  auto val = 42;		// val will be of type int
+  return val;
+}
+
+// [[Rcpp::export]]
 List rcpp_hello_world() {
 
     CharacterVector x = CharacterVector::create( "foo", "bar" )  ;

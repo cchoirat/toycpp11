@@ -9,6 +9,10 @@ myhypot <- function(x, y) {
     .Call(`_toycpp11_myhypot`, x, y)
 }
 
+useAuto <- function() {
+    .Call(`_toycpp11_useAuto`)
+}
+
 rcpp_hello_world <- function() {
     .Call(`_toycpp11_rcpp_hello_world`)
 }
